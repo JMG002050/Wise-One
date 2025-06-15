@@ -19,8 +19,19 @@ html, body {
   background-position: 0px -10px;
 }
 
-.wise {
-  width: 300px;
+.dojo h1 p {
+  
 }
+
+
+
+.wise {
+  width: 400px;
+  position: absolute;
+  bottom: -15px;
+  right: 300px;
+}
+
+
 
 
