@@ -1,4 +1,4 @@
-/* ===  UNIVERSAL === */
+/* === UNIVERSAL RESET === */
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +10,7 @@ html, body {
   font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-
-/* ===  SECTION === */
+/* === SECTION STYLES === */
 .dojo {
   position: relative;
   background-image: url("./resources/images/background0.png");
@@ -21,7 +20,7 @@ html, body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
   overflow: hidden;
 }
 
@@ -48,13 +47,11 @@ html, body {
 }
 
 .wise {
-  padding: 0;
-  margin: 0;
   width: 400px;
   position: absolute;
-  bottom: 0px;
-  transform: translateY(15px);
+  bottom: 0;
   right: 200px;
+  transform: translateY(15%);
   transition: opacity 0.4s ease-in-out;
   opacity: 1;
   cursor: pointer;
@@ -62,17 +59,16 @@ html, body {
 
 .speech-bubble {
   position: absolute;
-  bottom: 67%;
-  right: 1%;
+  bottom: 60%;
+  right: 5%;
   background-color: #1F8A70;
   color: #F2F2F2;
   padding: 3rem 2rem;
   max-width: 400px;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 1.7rem;
-  display: none; 
+  display: none;
   transition: opacity 0.3s ease;
 }
 
@@ -85,260 +81,3 @@ html, body {
   border-style: solid;
   border-color: #1F8A70 transparent transparent transparent;
 }
-
-
-/* ===  UNIVERSAL === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-  font-family: 'Zen Maru Gothic', sans-serif;
-}
-
-
-/* ===  SECTION === */
-.dojo {
-  position: relative;
-  background-image: url("./resources/images/background0.png");
-  width: 100%;
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-  overflow: hidden;
-}
-
-.text-box {
-  background-color: #F9CB40;
-  color: black;
-  max-width: 50%;
-  padding: 3rem;
-  margin: 1rem auto 0 1rem;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.text-box h1 {
-  font-size: 3.5rem;
-}
-
-.text-box p {
-  font-size: 1.7rem;
-}
-
-.wise {
-  padding: 0;
-  margin: 0;
-  width: 400px;
-  position: absolute;
-  bottom: 0px;
-  transform: translateY(15px);
-  right: 200px;
-  transition: opacity 0.4s ease-in-out;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.speech-bubble {
-  position: absolute;
-  bottom: 67%;
-  right: 1%;
-  background-color: #1F8A70;
-  color: #F2F2F2;
-  padding: 3rem 2rem;
-  max-width: 400px;
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  font-family: 'Zen Maru Gothic', sans-serif;
-  font-size: 1.7rem;
-  display: none; 
-  transition: opacity 0.3s ease;
-}
-
-.speech-bubble::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 30px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: #1F8A70 transparent transparent transparent;
-}
-
-
-/* ===  MEDIA QUERY 768px  === */
-@media (max-width: 768px) {
-  .text-box {
-    max-width: 100%;
-    padding: 1.5rem;
-    margin: 1rem auto;
-  }
-
-  .text-box h1 {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .text-box p {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .wise {
-    width: 300px;
-    right: 50px;
-    bottom: 0;
-    transform: translateY(20px);
-  }
-
-  .speech-bubble {
-    font-size: 1.2rem;
-    max-width: 90%;
-    padding: 1.5rem;
-    bottom: 43%;
-    right: 5%;
-  }
-
-  .speech-bubble::after {
-    left: 150px;
-  }
-}
-
-
-/* ===  MEDIA QUERY MIN -768px  === */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .text-box {
-    max-width: 100%;
-    padding: 1.5rem;
-    margin: 1rem auto;
-  }
-
-  .text-box h1 {
-    font-size: 3.2rem;
-    text-align: center;
-  }
-  
-  .text-box p {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .wise {
-    width: 55%;
-    right: 20%;
-    bottom: 0;
-    transform: translateY(60px);
-  }
-
-  .speech-bubble {
-    font-size: 2.2rem;
-    max-width: 90%;
-    padding: 1.5rem;
-    bottom: 43%;
-    right: 5%;
-  }
-
-  .speech-bubble::after {
-    left: 50%;
-  } 
-}
-
-
-
-/* ===  MEDIA QUERY 360-480  === */
-
-
-
-
-
-/* ===  MEDIA QUERY 768px  === */
-@media (max-width: 768px) {
-  .text-box {
-    max-width: 100%;
-    padding: 1.5rem;
-    margin: 1rem auto;
-  }
-
-  .text-box h1 {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .text-box p {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .wise {
-    width: 300px;
-    right: 50px;
-    bottom: 0;
-    transform: translateY(20px);
-  }
-
-  .speech-bubble {
-    font-size: 1.2rem;
-    max-width: 90%;
-    padding: 1.5rem;
-    bottom: 43%;
-    right: 5%;
-  }
-
-  .speech-bubble::after {
-    left: 150px;
-  }
-}
-
-
-/* ===  MEDIA QUERY MIN -768px  === */
-@media (min-width: 768px) and (max-width: 1024px){
-  .text-box {
-    max-width: 100%;
-    padding: 1.5rem;
-    margin: 1rem auto;
-  }
-
-  .text-box h1 {
-    font-size: 3.2rem;
-    text-align: center;
-  }
-  
-  .text-box p {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .wise {
-    width: 55%;
-    right: 20%;
-    bottom: 0;
-    transform: translateY(60px);
-  }
-
-  .speech-bubble {
-    font-size: 2.2rem;
-    max-width: 90%;
-    padding: 1.5rem;
-    bottom: 43%;
-    right: 5%;
-  }
-
-  .speech-bubble::after {
-    left: 50%;
-  } 
-}
-
-
-
-/* ===  MEDIA QUERY 768px  === */
-
