@@ -61,6 +61,33 @@ h1, p {
   right: 200px;
   transition: opacity 0.4s ease-in-out;
   opacity: 9;
+  cursor: pointer;
+}
+
+.speech-bubble {
+  position: absolute;
+  bottom: 450px;
+  right: 100px;
+  background-color: #fefefe;
+  color: #222;
+  padding: 3rem 2rem;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1.7rem;
+  display: none; 
+  transition: opacity 0.3s ease;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fefefe transparent transparent transparent;
 }
 
 

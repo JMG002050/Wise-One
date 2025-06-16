@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-  <!-- SECTION -->    
+<!-- SECTION -->    
    <section class="dojo">
     <div class="text-box">
       <h1>The Dojo of the Wise One Awaits Your Presence!🥋</h1>
@@ -18,9 +18,12 @@
     </div>
 
     <img id="wiseTurtle" class="wise" src="./resources/images/wise-one.png" alt="The Wise One" />
+    <div id="messageBox" class="speech-bubble">Click the turtle for wisdom...</div>
    </section>
 
+<!-- SCRIPT SECTION -->
    <script>
+    // MOVEMENT FOR TURTLE WISE-ONE
     const turtle = document.getElementById('wiseTurtle');
     const frames = [
       './resources/images/wise-one.png',
@@ -40,7 +43,30 @@
       turtle.src = frames[index];
       turtle.style.opacity = 90; // Fade back in
       }, 400); // Match the transition duration
-    }, 1000);
+    }, 950);
+
+
+  // TURTLE RESPONSES
+  const messages = [
+    "Deep breaths. You’re not late — you’re just on turtle time. 🐢🕰️",
+    "Wisdom of the day: stretch before stress. 🧘‍♂️🌀",
+    "You’re doing amazing… unless you’re out of snacks. 🍪😅",
+    "If you’re looking for life advice, I charge in lettuce. 🥬💸",
+    "If you're lost, follow the vibe… or Google Maps. 🧭📱",
+    "You clicked a turtle. That already makes you cool. 😎🐢",
+    "If the world feels heavy, carry it slowly — turtle style. 🌍🐢",
+    "Click me again. I might say something wiser. 🤔🔁",
+    "Breathe in… breathe out… now go get a cookie. 😮‍💨🍪",
+    "Slow down. Great things are still coming. ⏳🌱"
+  ];
+
+  const messageBox = document.getElementById('messageBox');
+
+  turtle.addEventListener('click', () => {
+  const randomIndex = Math.floor(Math.random() * messages.length);
+  messageBox.textContent = messages[randomIndex];
+  messageBox.style.display = 'block';
+  });
   </script>
 
 </body>
