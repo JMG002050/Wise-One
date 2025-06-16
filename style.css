@@ -9,26 +9,53 @@ html, body {
   height: 100%;
 }
 
+h1, p {
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+
 /* ===  SECTION === */
 .dojo {
+  position: relative;
   background-image: url("./resources/images/background0.png");
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -10px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+  padding-top: 10%;
 }
 
-.dojo h1 p {
-  
+.text-box {
+  background-color: #F9CB40;
+  color: black;
+  max-width: 45%;
+  padding: 3rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-
+/* .dojo h1, 
+.dojo p {
+  background-color: rgb(22, 146, 255);
+  max-width: 40%;
+  padding: 3rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+} */
 
 .wise {
   width: 400px;
   position: absolute;
-  bottom: -15px;
+  bottom: 0px;
   right: 300px;
 }
 

@@ -1,0 +1,64 @@
+DOJO OF THE WISE ONE – STYLE GUIDE
+----------------------------------
+
+🅰️ FONTS
+========
+
+1. Primary Heading Font: Zen Maru Gothic
+   - Google Fonts Link:
+     https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap
+   - CSS Usage:
+     font-family: 'Zen Maru Gothic', sans-serif;
+
+2. Body Font: Quicksand (alternative: Noto Sans)
+   - Google Fonts Link:
+     https://fonts.googleapis.com/css2?family=Quicksand&display=swap
+   - CSS Usage:
+     font-family: 'Quicksand', sans-serif;
+
+🧘 COLOR PALETTE
+=================
+
+| Purpose          | Hex Code  | Notes                            |
+|------------------|-----------|----------------------------------|
+| Text Background  | #fefefe   | Clean white box                  |
+| Main Text Color  | #222831   | Soft black                       |
+| Highlight Color  | #F9CB40   | Peach-like glow                  |
+| Primary Accent   | #1F8A70   | Calming jade green               |
+| Soft Sky Shade   | #CDE8E5   | For backgrounds or sections      |
+| Alt BG Gray      | #F2F2F2   | Use as light neutral background  |
+
+💡 STYLING TIPS
+===============
+
+1. Use a <div class="text-box"> to group <h1> and <p> together for a single background.
+
+2. Suggested box styling:
+   .text-box {
+     background-color: #fefefe;
+     padding: 3rem;
+     border-radius: 10px;
+     max-width: 40%;
+     margin-left: 1rem;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+   }
+
+3. Add fade-in animation:
+   .text-box {
+     animation: fadeIn 1.4s ease forwards;
+     opacity: 0;
+   }
+   @keyframes fadeIn {
+     to { opacity: 1; }
+   }
+
+4. Use relative positioning on .dojo and absolute positioning on .wise (turtle image).
+
+📝 EXTRAS
+=========
+
+- Consider adding a peaceful gradient if you’re not using a background image:
+  background: linear-gradient(to bottom, #CDE8E5, #F2F2F2);
+
+- Use media queries to make the layout responsive later on.
+
