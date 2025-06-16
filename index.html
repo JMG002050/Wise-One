@@ -17,7 +17,31 @@
       <p>Click on the Wise One’s belly, and he will reveal one of the universe’s secrets! 🤫</p>
     </div>
 
-    <img class="wise" src="./resources/images/wise-one.png"/>
+    <img id="wiseTurtle" class="wise" src="./resources/images/wise-one.png" alt="The Wise One" />
    </section>
+
+   <script>
+    const turtle = document.getElementById('wiseTurtle');
+    const frames = [
+      './resources/images/wise-one.png',
+      './resources/images/wise-two.png',
+      './resources/images/wise-three.png'
+    ];
+
+
+    let index = 0;
+
+    setInterval(() => {
+    // Fade out
+    turtle.style.opacity = 150;
+
+    setTimeout(() => {
+      index = (index + 1) % frames.length;
+      turtle.src = frames[index];
+      turtle.style.opacity = 90; // Fade back in
+      }, 400); // Match the transition duration
+    }, 1000);
+  </script>
+
 </body>
 </html>
