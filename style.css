@@ -13,14 +13,13 @@ html, body {
 /* === SECTION STYLES === */
 .dojo {
   position: relative;
-  background-image: url("resources/images/background0.png");
+  background-image: url("/resources/images/background0.png");
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  /* padding-top: 2rem; */
   overflow: hidden;
 }
 
