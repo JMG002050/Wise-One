@@ -13,7 +13,7 @@ html, body {
 /* === SECTION STYLES === */
 .dojo {
   position: relative;
-  background-image: url("/resources/images/background0.png");
+  background-image: url("./resources/images/background0.png");
   width: 100%;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ html, body {
 
 .speech-bubble {
   position: absolute;
-  bottom: 60%;
+  bottom: 400px;
   right: 5%;
   background-color: #1F8A70;
   color: #F2F2F2;
